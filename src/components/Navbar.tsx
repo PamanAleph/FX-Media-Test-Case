@@ -44,7 +44,7 @@ export default function Navbar() {
           className="h-16 w-16"
         />
 
-        <ul className="hidden space-x-4 sm:flex items-center">
+        <ul className="hidden space-x-4 lg:flex items-center">
           {links.map((link, index) => (
             <li key={index} className="flex">
               <Link
@@ -89,7 +89,7 @@ export default function Navbar() {
         <button
           title="Button"
           type="button"
-          className="p-4 md:hidden"
+          className="p-4 lg:hidden"
           onClick={() => setIsOpen(!isOpen)}
         >
           <svg
@@ -111,7 +111,7 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-yellow-400">
+        <div className="lg:hidden bg-yellow-400">
           <ul className="flex flex-col items-center space-y-4 py-4">
             {links.map((link, index) => (
               <li key={index}>

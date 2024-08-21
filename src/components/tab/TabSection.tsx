@@ -29,13 +29,13 @@ export default function TabSection() {
   const filteredBlogData = blogData.filter(blog => blog.type === tabs[activeTab].type);
 
   return (
-    <section className="max-w-5xl mx-auto space-y-4">
-      <div className="flex items-center space-x-4">
+    <section className="max-w-5xl mx-auto space-y-4 px-4">
+      <div className="flex flex-wrap sm:items-start sm:justify-start items-center justify-center space-x-4">
         {tabs.map((tab, index) => (
           <button
             key={index}
             onClick={() => setActiveTab(index)}
-            className={`px-5 py-1  rounded-sm rounded${
+            className={`px-4 py-2 sm:px-5 sm:py-1 rounded-md ${
               activeTab === index
                 ? "text-white bg-blue-600"
                 : "border-gray-300 border-b-2 text-gray-600"
@@ -46,7 +46,7 @@ export default function TabSection() {
         ))}
       </div>
       <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto px-4 sm:p-0">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto">
           {filteredBlogData.map((blog, index) => (
             <BlogCard
               key={index}

@@ -6,7 +6,7 @@ import { blogData, newsData } from "@/lib/data";
 
 export default function Home() {
   return (
-    <section className="space-y-6">
+    <section className="space-y-6 z-10">
       sdas
       <div>
         <TabSection/>
