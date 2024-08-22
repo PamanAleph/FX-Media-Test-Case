@@ -1,6 +1,7 @@
-"use client"
+"use client";
 import Image from "next/image";
 import React, { useEffect } from "react";
+import Script from "next/script";
 
 const Carousel = () => {
   useEffect(() => {
@@ -27,13 +28,18 @@ const Carousel = () => {
 
   return (
     <>
-      <link
-        rel="stylesheet"
-        href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+      <Script
+        src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        strategy="beforeInteractive"
       />
-      <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-      <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+      <Script
+        src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+        strategy="beforeInteractive"
+      />
+      <Script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        strategy="beforeInteractive"
+      />
 
       <div id="carouselExampleIndicators" className="carousel slide mt-0" data-ride="carousel">
         <ol className="carousel-indicators">
