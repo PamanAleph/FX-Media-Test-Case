@@ -1,18 +1,23 @@
 import SaleOrdinary from "@/assets/sale_ordinary.jpg";
 import SocialDance from "@/assets/social_dance.jpg";
 import OpenInvitational from "@/assets/open_invitational.jpg";
+import AnnualBall from "@/assets/anuual_9_ball.jpg"
+import Bazaar from "@/assets/bazaar.jpg"
+import TableTennis from "@/assets/table_tennis.jpg"
 
 export const blogData = [
   {
     image: SaleOrdinary,
     title: "sale of ordinary membership at the club",
     type: "Featured",
+    position: "center",
     description: "Purchase of membership directly from the club",
   },
   {
     image: SocialDance,
     title: "social dance night black & white knight",
     type: "Featured",
+    position: "center",
     description:
       "Come out and dance to a live band and have the time of your time",
   },
@@ -20,7 +25,34 @@ export const blogData = [
     image: OpenInvitational,
     title: "21st ssc open invitational midget meet 2015",
     type: "Featured",
-    description: "12 & 13 Septermber Venue: Competition Pool",
+    position: "center",
+    description: `12 & 13 Septermber 
+Venue: Competition Pool`,
+  },
+  {
+    image: AnnualBall,
+    title: "annual 9-ball pool competition",
+    type: "Featured",
+    position: "left",
+    description: `Time: 7pm (weekdays)
+Venue: Billiards Room (Bowling Centre)`,
+  },
+  {
+    image: TableTennis,
+    title: "2nd Table tennis open championships",
+    type: "Featured",
+    position: "center",
+    description:`Men's Singles/Doubles 
+Ladies' Singles/Doubles 
+Mixed Doubles`,
+  },
+  {
+    image: Bazaar,
+    title: "Weekend bazaar every saturday",
+    type: "Featured",
+    position: "left",
+    description: `Time : 10am to 10pm
+venue : The Atrium`,
   },
   {
     image: SaleOrdinary,

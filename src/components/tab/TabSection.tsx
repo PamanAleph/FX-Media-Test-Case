@@ -29,7 +29,7 @@ export default function TabSection() {
   const filteredBlogData = blogData.filter(blog => blog.type === tabs[activeTab].type);
 
   return (
-    <section className="max-w-5xl mx-auto space-y-4 px-4">
+    <section className="max-w-7xl mx-auto space-y-4 p-4">
       <div className="flex flex-wrap sm:items-start sm:justify-start items-center justify-center space-x-4">
         {tabs.map((tab, index) => (
           <button
@@ -45,18 +45,17 @@ export default function TabSection() {
           </button>
         ))}
       </div>
-      <div className="flex justify-center">
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 mx-auto">
+        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 ">
           {filteredBlogData.map((blog, index) => (
             <BlogCard
               key={index}
               image={blog.image.src}
               title={blog.title}
+              position={blog.position}
               description={blog.description}
             />
           ))}
         </div>
-      </div>
     </section>
   );
 }

@@ -10,11 +10,11 @@ export default function NewsSection() {
   };
 
   return (
-    <div className="px-4 py-8">
-      <h1 className="text-[#0171BB] text-4xl font-bold mb-8 max-w-5xl mx-auto">
+    <div className="max-w-7xl mx-auto space-y-4 p-4">
+      <h1 className="text-[#0171BB] font-bold mb-8 ">
         News
       </h1>
-      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8 mx-auto max-w-5xl">
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-8  ">
         {newsData.slice(0, showAll ? newsData.length : 2).map((news, index) => (
           <NewsCard
             key={index}
