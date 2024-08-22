@@ -136,7 +136,7 @@ export default function Navbar() {
           </button>
         </div>
       ) : (
-        <div className="flex flex-col bg-white items-center">    
+        <div className="flex flex-col bg-white items-center ">    
           <Image
             src={LOGO}
             alt="Logo"
@@ -146,7 +146,7 @@ export default function Navbar() {
           />
           <button
             className="w-full bg-yellow-400 text-white py-2"
-            onClick={handleMenuClick} // Toggle dropdown menu on click
+            onClick={handleMenuClick} 
           >
             Menu
           </button>
